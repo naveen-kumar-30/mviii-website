@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    background-color: white;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 11vh;
+}
+
+.img {
+    margin-top: 3px;
+    margin-left: 20px;
+
+    animation: l2r 2s ease forwards;
+}
+
+ol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 25%;
+
+   animation: t2b 2.3s ease forwards;
+}
+
+li {
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    font-weight: 600px;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.isactive {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    border-bottom: 5px solid red;
+    font-weight: bold;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: black;
+    transition: color 2.2s ease;
+}
+
+nav ol li a:hover {
+  color: red; 
+
+}
+
+
+.container {
+    height: 756px;
+    width: 1356px;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22.68px;
+     
+}
+
+.inside {
+    width: 50%;
+    text-align: right;
+    line-height: 30px;
+    font-size: 22.63px;
+}
+
+.allcontent {
+    margin-left: 261px;
+    width: 200px;
+    text-align: right;
+    line-height: 30px;
+    scale: 2.2;
+    margin-top: 1px;
+        
+    animation: b2t 2s ease forwards;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: red;
+    font-weight: 600;
+    width: 200px;
+    text-align: right;
+    line-height: 30px;
+    font-size: 22.68px;
+}
+
+
+#highlight {
+    font-family: "Bebas Neue";
+    font-size: 90.72px;
+
+}
+
+.subheading {
+    font-family: "Bebas Neue";
+    font-size: 56.7px;
+    text-align: right;
+    line-height: 30px;
+}
+
+p {
+    margin-top: 100px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    text-align: left;
+    width: 169%;
+    margin-left: 140px;
+
+    animation: l2r 3.3s ease forwards;
+}
+
+.spans{
+    font-weight: 800;
+}
+
+
+.newbtn{
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin: 50px;
+}
+
+.nextbtn{
+  display: flex;
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2);
+  border-radius: 50%;
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.589);
+  transition: all 0.3s;
+  margin-right: 6px;
+}
+
+.nextbtn:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+  transform: scale(2);
+}
+
+.nextbtn:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.nextbtn i {
+  color: white;
+}
+
+.review{
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  top: auto;
+  bottom: 10px;
+}
+
+.review{
+  animation-name: moving-animation;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+}
+
+.review-1{
+    opacity: 50%;
+    margin: 10px;
+}
+.review-1{
+    height: 150px;
+}
+
+
+
+@keyframes l2r {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes t2b {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes r2l {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes b2t {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes moving-animation {
+  0% {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    margin-left: 100%;
+    opacity: 0;
+  }
+}
+
+
+
+/*  */
+
+
+#pageTransition {
+  position: fixed;
+  width: 100vw;
+  height: 0vh;
+  background-color: red; 
+  z-index: 9999;
+  bottom: 0;
+  top: auto;
+}
+
+.next-slide-animation {
+  animation: slideVerticalTransition 1s ease-in-out forwards;
+}
+
+@keyframes slideVerticalTransition {
+  0% {
+    top: auto;
+    bottom: 0;
+    height: 0vh;
+  }
+  40% {
+    top: auto;
+    bottom: 0;
+    height: 100vh;
+  }
+  50% {
+    top: 0;
+    bottom: auto;
+    height: 100vh;
+  }
+  100% {
+    top: 0;
+    bottom: auto;
+    height: 0vh;
+  }
+}
